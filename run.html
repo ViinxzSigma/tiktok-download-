@@ -1,0 +1,60 @@
+<!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Downloader Video Instagram</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('https://files.catbox.moe/pbotp1.jpg'); /* Ganti dengan URL gambar naga merah */
+      background-size: cover;
+      background-position: center;
+      color: black;
+      text-align: center;
+      padding: 50px;
+    }
+    .container {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 15px;
+      display: inline-block;
+    }
+    input[type="text"] {
+      padding: 10px;
+      width: 300px;
+      border: none;
+      border-radius: 5px;
+      margin-bottom: 15px;
+    }
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: blue;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: blue;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Downloader Video Instagram</h1>
+    <p>Masukkan URL video Instagram di bawah ini:</p>
+    <input type="text" id="url" placeholder="https://www.instagram.com/p/...">
+    <br>
+    <button onclick="downloadVideo()">Download</button>
+    <div id="result"></div>
+  </div>  <script>
+    function downloadVideo() {
+      const url = document.getElementById('url').value;
+
+      // Simulasi proses download (anda harus menggunakan backend/API yang nyata untuk ini)
+      if (url.includes("instagram.com")) {
+        document.getElementById("result").innerHTML = `<p>Link video berhasil diproses! <br><a href="#" download>Unduh Video</a></p>`;
+      } else {
+        document.getElementById("result").innerHTML = `<p style='color: red;'>URL tidak valid!</p>`;
+     
